@@ -2,7 +2,7 @@
   "name": "celestialcenter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://celestialcenter.store",
+  "homepage": "https://store.garrettstrange.com",
   "dependencies": {
     "@stripe/react-stripe-js": "^2.9.0",
     "@stripe/stripe-js": "^4.10.0",
