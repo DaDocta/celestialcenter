@@ -1,0 +1,37 @@
+.download-button {
+  display: block;
+  width: 200px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  transition: all 0.3s ease;
+}
+
+.download-button.downloading {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: wait;
+}
+
+.download-button.completed {
+  background: rgba(0, 255, 0, 0.2);
+  cursor: default;
+}
+
+.download-button.failed {
+  background: rgba(255, 0, 0, 0.2);
+}
+
+.download-button:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
+}
+
+.download-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

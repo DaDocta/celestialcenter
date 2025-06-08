@@ -1,0 +1,38 @@
+/* src/styles/Product.css */
+
+.product-list {
+  text-align: center;
+}
+
+.product-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  padding: 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.product-list li:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.product-detail {
+  text-align: center;
+}
+
+.product-detail button {
+  padding: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  margin-top: 20px;
+}

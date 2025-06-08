@@ -1,0 +1,25 @@
+/* src/index.css */
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('./assets/Cinzel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'Cinzel', serif; /* Set Cinzel as the default font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000; /* Optional: Set a background color */
+  color: white; /* Optional: Set a default text color */
+}
+
+h1, h2, h3, h4, h5, h6, p, a, button {
+  font-family: 'Cinzel', serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

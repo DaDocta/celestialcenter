@@ -1,0 +1,27 @@
+/* src/styles/NotFound.css */
+
+.not-found-container {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .not-found-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .not-found-container p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .not-found-container a {
+    color: #4183c4;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .not-found-container a:hover {
+    text-decoration: underline;
+  }
+  

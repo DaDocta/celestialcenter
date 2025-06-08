@@ -1,0 +1,36 @@
+/* src/styles/Home.css */
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: 'Cinzel', serif;
+}
+
+.home-content p {
+  margin-bottom: 20px;
+}
+
+.stars-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media (orientation: portrait) {
+  .home-content p {
+    font-size: 9vw; /* Increase font size specifically for portrait mode */
+  }
+}
+
+@media (orientation: landscape) {
+  .home-content p {
+    font-size: 5vw; /* Increase font size specifically for portrait mode */
+  }
+}

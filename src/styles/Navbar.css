@@ -1,0 +1,62 @@
+/* src/styles/Navbar.css */
+
+.navbar {
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  position: absolute;
+  top: 10vh;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 2px solid white;
+  margin: 0 auto;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ccc;
+}
+
+/* Portrait mode adjustments for icons */
+@media (orientation: portrait) {
+  .navbar a {
+    font-size: 4vw; /* Adjust icon size */
+    padding: 0 2vw;
+  }
+
+  .navbar ul {
+    width: 75vw;
+  }
+
+  .navbar a svg {
+    font-size: 8vw; /* Adjust icon size specifically */
+    vertical-align: middle;
+  }
+}
+
+@media (orientation: landscape) {
+  .navbar a {
+    font-size: 2vw;
+    padding: 0 1vw;
+  }
+
+  .navbar ul {
+    width: 45vw;
+  }
+}

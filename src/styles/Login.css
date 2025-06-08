@@ -1,0 +1,113 @@
+/* src/styles/Login.css */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Black shadow for better contrast */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Consistent spacing between form elements */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for form */
+  padding: 30px 50px; /* Spacious padding for form */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); /* Strong shadow for definition */
+  width: 400px; /* Fixed width for consistency */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row; /* Arrange label and input side by side */
+  align-items: center; /* Vertically center align items */
+  gap: 15px; /* Space between label and input */
+}
+
+label {
+  font-size: 1rem;
+  color: white; /* Keep label text white */
+  text-shadow: 3px 3px 6px black, -3px -3px 6px black; /* Stronger double-layered shadow */
+  width: 80px; /* Fixed width to align labels */
+  text-align: right; /* Align label text to the right */
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 12px 20px; /* Comfortable padding inside inputs */
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent input background */
+  color: white;
+  text-shadow: 1px 1px 2px black; /* Black shadow for better readability */
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+  flex: 1; /* Allow input to take remaining space */
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: white; /* Placeholder text color */
+  text-shadow: 1px 1px 2px black; /* Shadow for placeholder text */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  background-color: rgba(255, 255, 255, 0.3); /* Slightly darker on focus */
+}
+
+/* Targeting the button with the specific class */
+button {
+    padding: 8px 16px; /* Reduced padding for a smaller button */
+    font-size: 1rem; /* Reduced font size */
+    cursor: pointer;
+    border: 2px solid white; /* White border for button */
+    border-radius: 5px;
+    background-color: transparent !important; /* Fully transparent button */
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black; /* Black outline for button text */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.6);
+    align-self: center; /* Center the button */
+    width: 200px; /* Let the button width adjust based on content */
+}
+  
+button:hover {
+background-color: rgba(255, 255, 255, 0.1); /* Slight color change on hover */
+color: #e6b3ff;
+box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.8);
+transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  text-shadow: 1px 1px 2px black; /* Black shadow for better readability */
+}
+
+a {
+  color: #e6b3ff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-shadow: 1px 1px 3px black; /* Black shadow for the link text */
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+  color: #d49eff;
+  text-shadow: 2px 2px 5px black;
+}
