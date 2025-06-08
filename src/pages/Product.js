@@ -17,7 +17,7 @@ const Product = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const data = await fetchData('https://celestialcenter-835108787508.us-south1.run.app/server/products');
+        const data = await fetchData('https://celestialcenter-835108787508.us-south1.run.app/api/products');
         setProducts(data);
         setError(null);
 
