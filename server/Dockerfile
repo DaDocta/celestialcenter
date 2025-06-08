@@ -1,3 +1,5 @@
+# server/Dockerfile
+
 # Use lightweight Node.js image
 FROM node:18-slim
 
@@ -13,11 +15,11 @@ RUN npm install
 # Copy the rest of the server code
 COPY . .
 
-# Cloud Run requires the app to listen on $PORT (default to 8080)
+# Ensure we pick up $PORT (default 8080)
 ENV PORT=8080
 
-# Expose the required port
+# Expose the port Cloud Run will use
 EXPOSE 8080
 
-# Run the app
+# Start the server
 CMD ["npm", "start"]
